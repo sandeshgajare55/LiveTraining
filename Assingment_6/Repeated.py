@@ -1,0 +1,7 @@
+t=(1,2,3,4,5,6,1,2,3,4)
+print('-----------------------------------------')
+print('Tuple : ',t)
+print('-----------------------------------------')
+n=int(input('Enter number : '))
+cnt = t.count(n)
+print('Repeated element :',n,'is present',cnt,'times')
