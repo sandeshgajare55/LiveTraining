@@ -1,0 +1,17 @@
+SELECT * FROM livehealth.emp;
+select f_name,l_name,sal from emp where sal not between 100000 and 90000;
+select * from emp;
+insert into emp value("Sanket","Nimase",45000,101,'2020-01-05','P');
+insert into emp value("Shubham","Bhagwat",45002,103,null,'S');
+select f_name,l_name,dept_id from emp where dept_id=101 or 102 order by dept_id;
+select f_name,l_name,sal from emp where sal not between 10000 and 45000 and dept_id=101;
+select * from emp;
+select f_name,l_name from emp where hiredate is NULL;
+select * from emp;
+select f_name,l_name from emp where f_name like '%n%' and f_name like '%t%';
+select * from emp;
+select l_name,job,sal from emp where job="P" or job="S" and  sal>10000;
+select  * from emp where sal order by sal;
+select job from emp ;
+select f_name, l_name, sal, sal*.15 PF from emp;
+select * from emp where l_name="Gajare" or l_name="Nimase";
