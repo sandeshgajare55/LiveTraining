@@ -1,0 +1,14 @@
+use livehealth;
+create table item2(id int,iname varchar(10),cost int,sid int);
+insert into item2(select * from items);
+select * from item2;
+update items set cost=cost+100 where sid=(select sid from supplier where sname like ("Sarvesh"));
+select * from items;
+delete from  items where sid=(select sid from supplier where sname like "Sanket");
+select * from supplier;
+select * from dept;
+select * from emp;
+select* from student;
+select dept_id from emp where f_name like "Sandesh";
+select avg(sal),dept_id from emp group by dept_id having dept_id=(select dept_id from emp where f_name="Sandesh");
+select * from emp where exists(select dept_id from emp where f_name="Sandesh");
